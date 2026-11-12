@@ -64,7 +64,6 @@ theHarvester -h
 
 The tool displayed its help information and confirmed that version 4.8.2 was installed.
 
-**Evidence:** `screenshots/W2-PM4_Step01_Tool_Verification.png`
 
 #### Step 2: Reconnaissance Using CRT.sh
 
@@ -80,7 +79,8 @@ No IP addresses, email addresses, people, or hosts were returned.
 
 This was recorded as a source/request error, not as evidence that the domain has no publicly available information.
 
-**Evidence:** `screenshots/W2-PM4_Step02_CRTsh_Reconnaissance.png`
+**Evidence:** 
+![CRT.sh Reconnaissance](screenshots/W2-PM4_Step02_CRTsh_Reconnaissance.png)
 
 #### Step 3: Reconnaissance Using DuckDuckGo
 
@@ -101,7 +101,8 @@ Results:
 
 The search completed successfully but returned no records.
 
-**Evidence:** `screenshots/W2-PM4_Step03_DuckDuckGo_Reconnaissance.png`
+**Evidence:** 
+![DuckDuckGo Reconnaissance](screenshots/W2-PM4_Step03_DuckDuckGo_Reconnaissance.png)
 
 #### Step 4: Reconnaissance Using Yahoo
 
@@ -122,7 +123,8 @@ Results:
 
 The search completed successfully but returned no records.
 
-**Evidence:** `screenshots/W2-PM4_Step04_Yahoo_Reconnaissance.png`
+**Evidence:** 
+![Yahoo Reconnaissance](screenshots/W2-PM4_Step04_Yahoo_Reconnaissance.png)
 
 #### Step 5: Export Reconnaissance Results
 
@@ -150,7 +152,6 @@ The output confirmed that both files existed.
 | JSON | 88 bytes |
 | XML | 161 bytes |
 
-**Evidence:** `screenshots/W2-PM4_Step05_Results_Export.png`
 
 ### 2.4 Results and Findings
 
@@ -198,8 +199,6 @@ The objective was to use Zenmap to scan an authorized lab host, identify open po
 
 Zenmap was opened on Kali Linux.
 
-**Evidence:** `screenshots/W2-PM5_Step01_Zenmap_Interface.png`
-
 #### Step 2: Configure and Execute the Scan
 
 The target IP address was entered into Zenmap:
@@ -212,7 +211,8 @@ The **Intense Scan** profile was selected and the scan was executed.
 
 Zenmap completed the scan and reported that the target host was active.
 
-**Evidence:** `screenshots/W2-PM5_Step04_Zenmap_Intense_Scan.png`
+**Evidence:** 
+![Zenmap Intense Scan](screenshots/W2-PM5_Step04_Zenmap_Intense_Scan.png)
 
 ### 3.4 Network Scanning Results
 
@@ -271,7 +271,8 @@ Content-Type: text/html
 
 The response confirmed that the Apache web server was responding successfully to HTTP requests.
 
-**Evidence:** `screenshots/W2-PM5_Step05_HTTP_Service_Verification.png`
+**Evidence:** 
+![HTTP Service Verification](screenshots/W2-PM5_Step05_HTTP_Service_Verification.png)
 
 ### 3.6 Saved Scan Results
 
@@ -327,35 +328,3 @@ I then used cURL to independently verify that the HTTP service returned a succes
 These exercises improved my understanding of information gathering, host discovery, port scanning, service identification, and the importance of validating results before drawing security conclusions.
 
 ---
-
-## 7. Evidence and Appendices
-
-The screenshots should be stored in a folder named `screenshots` alongside this Markdown report.
-
-### W2-PM4: theHarvester
-
-| Evidence | File |
-|---|---|
-| Tool Verification | `screenshots/W2-PM4_Step01_Tool_Verification.png` |
-| CRT.sh Reconnaissance | `screenshots/W2-PM4_Step02_CRTsh_Reconnaissance.png` |
-| DuckDuckGo Reconnaissance | `screenshots/W2-PM4_Step03_DuckDuckGo_Reconnaissance.png` |
-| Yahoo Reconnaissance | `screenshots/W2-PM4_Step04_Yahoo_Reconnaissance.png` |
-| Results Export | `screenshots/W2-PM4_Step05_Results_Export.png` |
-
-### W2-PM5: Zenmap
-
-| Evidence | File |
-|---|---|
-| Zenmap Interface | `screenshots/W2-PM5_Step01_Zenmap_Interface.png` |
-| Intense Scan Results | `screenshots/W2-PM5_Step04_Zenmap_Intense_Scan.png` |
-| HTTP Service Verification | `screenshots/W2-PM5_Step05_HTTP_Service_Verification.png` |
-| Saved Scan | `W2-PM5_Intense_Scan.xml` |
-
-### Exported theHarvester Results
-
-- `W2-PM4_DuckDuckGo.json`
-- `W2-PM4_DuckDuckGo.xml`
-
----
-
-**End of Report**
